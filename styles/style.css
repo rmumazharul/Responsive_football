@@ -1,0 +1,263 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+    margin: 0px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .container{
+    width: 1050px;
+} */
+p{
+    color: #6C6C6C;
+    font-weight: 400px;
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+.btn{
+    border: none;
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    font-size: 16px;
+    color: white;
+}
+.btn:hover{
+    background-color: #C71585;
+}
+
+/* Header */
+.header{
+    display: flex;
+    flex-direction: column;
+    padding-left: 156px;
+    padding-right: 124px;
+    padding-top: 42px;
+    background-color: #2D25A0;
+}
+.nav{
+    visibility: hidden;
+}
+.menu-login{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 49px;
+    /* padding-right: 15px; */
+}
+.menu a{
+    padding-right: 36px;
+}
+.watch-live{
+    display: flex;
+    justify-content: space-between;
+}
+.web-title h1{
+    font-size: 64px;
+    font-weight: 700px;
+    color: white;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.transition img{
+    width:555px;
+    height: 438px;
+}
+.transition:hover .man{
+    transform: rotate(30deg);
+    transition: 0.1s ease-in;
+}
+.ball img{
+    width: 70px;
+    height: 70px;
+    position: relative;
+    bottom: 410px;
+    left: 90px; 
+}
+.transition:hover .ball{
+    transform: translate(200px, -150px);
+    transition: transform .2s ease-out 0.1s;
+}
+
+/* Player Info */
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    row-gap: 27px;
+    padding-top: 47px;
+    padding-bottom: 165px;
+}
+.player{
+    width: 300px;
+    height: 474px;
+    border-radius: 5px;
+    box-shadow: 0px 5.34px 13.36px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    background-color: white;
+}
+.thumbnail img{
+    width: 300px;
+    height: 256px;
+}
+.player-info h3{
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+/* Highlights */
+.highlights{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 66px;
+    padding-bottom: 137px;
+    width: 1050px;
+}
+.highlights-title h3{
+    font-size: 48px;
+    font-weight: 700px;
+    margin-bottom: 18px;
+}
+.highlights-title p{
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+.youtube-frame{
+    width: 567px;
+    height: 427px;
+    border: none;
+}
+
+/* Footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo img{
+    width: 483.87px;
+    height: 110px;
+    padding-bottom: 20px;
+}
+.social-media img{
+    width: 32px;
+    height: 32px;
+    padding-right: 14px;
+}
+
+/* Media Queries */
+@media only screen and (max-width:688px) {
+    /* common */
+    .container{
+        width: 100%px;
+        height: 100%;
+        padding-left: 0%;
+    }
+    p{
+        width: 300px;
+    }
+
+    /* header */
+    .header{
+        width: 100%;
+        padding: 0 0 0 0;
+    }
+    .menu-login{
+        width: 100%;
+    }
+    .nav{
+        visibility: visible;
+        font-size: 24px;
+        color: white;
+        padding-left: 16px;
+        padding-top: 33px;
+    }
+    .login{
+        padding-top: 33px;
+        padding-right: 10px;
+    }
+    .login .btn{
+        width: 89px;
+        height: 32px;
+        font-size: 11px;
+    }
+    .menu{
+        visibility: hidden;
+    }
+    .watch-live{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 50px;
+    }
+    .web-title h1{
+        padding-left: 15px;
+        font-size: 36px;
+    }
+    #live-btn{
+        transform: translateX(10%);
+    }
+    .transition .man{
+        width: 329px;
+        height: 259px;
+    }
+    .ball img{
+        width: 20px;
+        height: 20px;
+        bottom: 173px;
+        left: 30px;
+    }
+    /* Player Info */
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 30px;
+        padding-left: 15px;
+        padding-bottom: 47px;
+        width: 100%;
+    }
+    /* Highlights */
+    .highlights{
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 15px;
+        padding-bottom: 43px;
+        width: 365px;
+    }
+    .highlights-title h3{
+        font-size: 30px;
+        margin-top: 0px;
+        padding-left: 15px;
+    }
+    .highlights-title p{
+        padding-left: 15px;
+    }
+    .highlights-title .btn{
+        transform: translateX(15%);
+    }
+    .youtube-frame{
+        padding-top: 20px;
+        padding-left: 15px;
+        width: 310px;
+        height: 260px;
+    }
+    /* Footer */
+    .logo img{
+        width: 275px;
+        height: 63px;
+    }
+    .social-media img{
+        transform: translateX(15%);
+    }
+    .copyright p{
+        width:250px;
+        transform: translateX(10%);
+    }
+}
